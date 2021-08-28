@@ -1,7 +1,6 @@
 package com.gdstruc.module2;
 
 public class Player {
-
     private int id;
     private String name;
     private int level;
@@ -34,5 +33,14 @@ public class Player {
 
     public void setLevel(int level) {
         this.level = level;
+    }
+
+    @Override
+    public String toString() {
+        return "Player{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", level=" + level +
+                '}';
     }
 }

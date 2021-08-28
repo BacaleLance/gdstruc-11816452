@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/gdstruc-module2-LinkedList.iml" filepath="$PROJECT_DIR$/gdstruc-module2-LinkedList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gdstruc-module2-linkedList.iml" filepath="$PROJECT_DIR$/gdstruc-module2-linkedList.iml" />
     </modules>
   </component>
 </project>

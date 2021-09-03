@@ -22,7 +22,13 @@ public class PlayerLinkedList {
 
     public void removeFirstElement(){
 
-        head = head.getNextPlayer();
+        PlayerNode temp = head;
+
+        if (temp != null){
+
+            head = head.getNextPlayer();
+        }
+
 
     }
 

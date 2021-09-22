@@ -2,11 +2,35 @@ package com.gdstruc.module3;
 
 import java.util.Objects;
 
-public class Player {
+public class Card {
 
-    private int playerId;
-    private String userName;
-    private int level;
+    private int cardId;
+    private String cardName;
+
+    public int getCardId() {
+        return cardId;
+    }
+
+    public void setCardId(int cardId) {
+        this.cardId = cardId;
+    }
+
+    public String getCardName() {
+        return cardName;
+    }
+
+    public void setCardName(String cardName) {
+        this.cardName = cardName;
+    }
+
+
+
+
+    public Card(int cardId, String cardName) {
+        this.cardId = cardId;
+        this.cardName = cardName;
+
+    }
 
 
     @Override
@@ -14,33 +38,20 @@ public class Player {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Player player = (Player) o;
-        return playerId == player.playerId &&
-                level == player.level &&
-                Objects.equals(userName, player.userName);
+        Card card = (Card) o;
+        return cardId == card.cardId &&
+                Objects.equals(cardName, card.cardName);
     }
 
     @Override
     public int hashCode(){
-        return Objects.hash(playerId, userName, level);
+        return Objects.hash(cardId, cardName);
     }
 
     @Override
     public String toString(){
-        return "Player{" + "playerId=" + playerId + ", userName: " + userName + '\'' + ", level=" + level + '}';
+        return "Card{" + "cardId=" + cardId + ", cardName: " + cardName  + '}';
     }
-
-    public int getPlayerId(){ return playerId; }
-
-    public void setPlayerId(int playerId) { this.playerId = playerId; }
-
-    public String getUserName(){ return userName; }
-
-    public void setUserName(String userName) { this.userName = userName; }
-
-    public int getLevel(){ return level; }
-
-    public void setLevel(int level){ this.level = level; }
 
 
 

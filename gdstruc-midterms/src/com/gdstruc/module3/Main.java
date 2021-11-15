@@ -82,7 +82,9 @@ public class Main {
             if (command == 2 && round != 0 && !hand.isEmpty()) //hand->pile
             {
                 int draw = (int) (Math.random() * (5 - 1 + 1) + 1);
-
+                if (draw <= 0){
+                    System.out.println("No cards to draw ");
+                }
                 if (draw > 1) {
                     System.out.println("Discard " + draw + " cards");
                 } else {
